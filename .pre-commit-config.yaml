@@ -37,6 +37,7 @@ repos:
     hooks:
       - id: flake8 # See .flake8 for args
         additional_dependencies:
+          - flake8-annotations-complexity
           - flake8-bugbear
           - flake8-builtins
           - flake8-comprehensions
