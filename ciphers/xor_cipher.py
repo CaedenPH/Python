@@ -166,27 +166,25 @@ class XORCipher:
         return True
 
 
-# Tests
-# crypt = XORCipher()
-# key = 67
+if __name__ == "__main__":
+    crypt = XORCipher()
+    key = 67
 
-# # test encrypt
-# print(crypt.encrypt("hallo welt",key))
-# # test decrypt
-# print(crypt.decrypt(crypt.encrypt("hallo welt",key), key))
+    # test encrypt
+    print(crypt.encrypt("hallo welt", key))
 
-# # test encrypt_string
-# print(crypt.encrypt_string("hallo welt",key))
+    # test encrypt_string
+    print(crypt.encrypt_string("hallo welt", key))
 
-# # test decrypt_string
-# print(crypt.decrypt_string(crypt.encrypt_string("hallo welt",key),key))
+    # test decrypt_string
+    print(crypt.decrypt_string(crypt.encrypt_string("hallo welt", key), key))
 
-# if (crypt.encrypt_file("test.txt",key)):
-#       print("encrypt successful")
-# else:
-#       print("encrypt unsuccessful")
+    if crypt.encrypt_file("test.txt", key):
+        print("encrypt successful")
+    else:
+        print("encrypt unsuccessful")
 
-# if (crypt.decrypt_file("encrypt.out",key)):
-#       print("decrypt successful")
-# else:
-#       print("decrypt unsuccessful")
+    if crypt.decrypt_file("encrypt.out", key):
+        print("decrypt successful")
+    else:
+        print("decrypt unsuccessful")

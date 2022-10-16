@@ -1,9 +1,9 @@
-#############################
-# Author: Aravind Kashyap
-# File: lis.py
-# comments: This programme outputs the Longest Strictly Increasing Subsequence in
-#           O(NLogN) Where N is the Number of elements in the list
-#############################
+"""
+Author: Aravind Kashyap
+This programme outputs the Longest Strictly Increasing Subsequence in
+    O(NLogN) Where N is the Number of elements in the list
+"""
+
 from __future__ import annotations
 
 

@@ -99,9 +99,6 @@ if __name__ == "__main__":
 
     doctest.testmod()
     # inputing the strings
-    # input_string = input("input a string :")
-    # pattern = input("input a pattern :")
-
     input_string = "aab"
     pattern = "c*a*b"
 

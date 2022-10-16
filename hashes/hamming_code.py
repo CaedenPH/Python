@@ -1,7 +1,6 @@
 # Author: João Gustavo A. Amorim & Gabriel Kunz
 # Author email: joaogustavoamorim@gmail.com and gabriel-kunz@uergs.edu.br
 # Coding date:  apr 2019
-# Black: True
 
 """
     * This code implement the Hamming code:
@@ -251,7 +250,7 @@ sizePari = 4
 be = 2
 
 # Message/word to be encoded and decoded with hamming
-# text = input("Enter the word to be read: ")
+text = input("Enter the word to be read: ")
 text = "Message01"
 
 # Convert the message to binary

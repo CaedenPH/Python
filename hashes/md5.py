@@ -195,11 +195,9 @@ def md5me(test_string):
         d = d0
         for i in range(64):
             if i <= 15:
-                # f = (B & C) | (not32(B) & D)
                 f = d ^ (b & (c ^ d))
                 g = i
             elif i <= 31:
-                # f = (D & B) | (not32(D) & C)
                 f = c ^ (d & (b ^ c))
                 g = (5 * i + 1) % 16
             elif i <= 47:

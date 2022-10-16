@@ -24,8 +24,6 @@ class PriorityQueue:
             heapq.heappush(self.elements, (priority, item))
             self.set.add(item)
         else:
-            # update
-            # print("update", item)
             temp = []
             (pri, x) = heapq.heappop(self.elements)
             while x != item:
@@ -92,7 +90,6 @@ def do_something(back_pointer, goal, start):
     x = back_pointer[goal]
     while x != start:
         (x_c, y_c) = x
-        # print(x)
         grid[(n - 1) - y_c][x_c] = "-"
         x = back_pointer[x]
     grid[(n - 1)][0] = "-"
@@ -139,8 +136,6 @@ def expand_state(
 ):
     for itera in range(n_heuristic):
         open_list[itera].remove_element(s)
-    # print("s", s)
-    # print("j", j)
     (x, y) = s
     left = (x - 1, y)
     right = (x + 1, y)
@@ -248,7 +243,6 @@ def multi_a_star(start: TPos, goal: TPos, n_heuristic: int):
     close_list_inad: list[int] = []
     while open_list[0].minkey() < float("inf"):
         for i in range(1, n_heuristic):
-            # print(open_list[0].minkey(), open_list[i].minkey())
             if open_list[i].minkey() <= W2 * open_list[0].minkey():
                 global t
                 t += 1

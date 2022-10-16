@@ -273,11 +273,6 @@ def enigma(
             if rotorpos3 >= len(abc):
                 rotorpos3 = 0
 
-        # else:
-        #    pass
-        #    Error could be also raised
-        #    raise ValueError(
-        #       'Invalid symbol('+repr(symbol)+')')
         result.append(symbol)
 
     return "".join(result)

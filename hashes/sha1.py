@@ -144,7 +144,6 @@ def main():
     hash.  unittest.main() has been commented because we probably don't want to run
     the test each time.
     """
-    # unittest.main()
     parser = argparse.ArgumentParser(description="Process some strings or files")
     parser.add_argument(
         "--string",

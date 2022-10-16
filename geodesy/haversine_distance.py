@@ -33,7 +33,7 @@ def haversine_distance(lat1: float, lon1: float, lat2: float, lon2: float) -> fl
     '254,352 meters'
     """
     # CONSTANTS per WGS84 https://en.wikipedia.org/wiki/World_Geodetic_System
-    # Distance in metres(m)
+    # Distance in metres
     # Equation parameters
     # Equation https://en.wikipedia.org/wiki/Haversine_formula#Formulation
     flattening = (AXIS_A - AXIS_B) / AXIS_A

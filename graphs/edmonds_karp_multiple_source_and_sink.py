@@ -174,14 +174,6 @@ class PushRelabelExecutor(MaximumFlowAlgorithmExecutor):
 if __name__ == "__main__":
     entrances = [0]
     exits = [3]
-    # graph = [
-    #     [0, 0, 4, 6, 0, 0],
-    #     [0, 0, 5, 2, 0, 0],
-    #     [0, 0, 0, 0, 4, 4],
-    #     [0, 0, 0, 0, 6, 6],
-    #     [0, 0, 0, 0, 0, 0],
-    #     [0, 0, 0, 0, 0, 0],
-    # ]
     graph = [[0, 7, 0, 0], [0, 0, 6, 0], [0, 0, 0, 8], [9, 0, 0, 0]]
 
     # prepare our network

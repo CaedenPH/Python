@@ -82,7 +82,6 @@ def emails_from_url(url: str = "https://github.com") -> list[str]:
         valid_emails = set()
         for link in parser.urls:
             # open URL.
-            # read = requests.get(link)
             try:
                 read = requests.get(link)
                 # Get the valid email.
