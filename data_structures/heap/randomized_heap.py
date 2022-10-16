@@ -122,7 +122,7 @@ class RandomizedHeap(Generic[T]):
 
         self._root = RandomizedHeapNode.merge(self._root.left, self._root.right)
 
-        return result
+        return result  # noqa: R504
 
     def top(self) -> T:
         """

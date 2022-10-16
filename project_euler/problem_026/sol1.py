@@ -50,7 +50,7 @@ def solution(numerator: int = 1, digit: int = 1000) -> int:
                 has_been_divided.append(now_divide)
                 now_divide = now_divide * 10 % divide_by_number
 
-    return the_digit
+    return the_digit  # noqa: R504
 
 
 # Tests

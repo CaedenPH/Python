@@ -59,7 +59,7 @@ def solution(n: int = 1000000) -> int:
         if counter > pre_counter:
             largest_number = input1
             pre_counter = counter
-    return largest_number
+    return largest_number  # noqa: R504
 
 
 if __name__ == "__main__":

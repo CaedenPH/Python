@@ -35,7 +35,7 @@ class LinkedList:
             item = self.head.item
             self.head = self.head.next
             self.size -= 1
-            return item
+            return item  # noqa: R504
 
     def is_empty(self) -> bool:
         return self.head is None
@@ -53,15 +53,12 @@ class LinkedList:
             return ""
         else:
             iterate = self.head
-            item_str = ""
             item_list: list[str] = []
             while iterate:
                 item_list.append(str(iterate.item))
                 iterate = iterate.next
 
-            item_str = " --> ".join(item_list)
-
-            return item_str
+            return " --> ".join(item_list)
 
     def __len__(self) -> int:
         """

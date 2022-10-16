@@ -31,8 +31,7 @@ class PolybiusCipher:
         True
         """
         index1, index2 = np.where(self.SQUARE == letter)
-        indexes = np.concatenate([index1 + 1, index2 + 1])
-        return indexes
+        return np.concatenate([index1 + 1, index2 + 1])
 
     def numbers_to_letter(self, index1: int, index2: int) -> str:
         """

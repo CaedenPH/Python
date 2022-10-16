@@ -86,7 +86,7 @@ class FilesArray:
         value = self.buffers[index]
         self.buffers[index] = None
 
-        return value
+        return value  # noqa: R504
 
 
 class FileMerger:

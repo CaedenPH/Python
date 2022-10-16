@@ -78,7 +78,7 @@ def solution(ceiling: int = 1_000_000) -> int:
                 length = j - i
                 largest = sol
 
-    return largest
+    return largest  # noqa: R504
 
 
 if __name__ == "__main__":

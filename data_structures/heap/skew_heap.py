@@ -153,7 +153,7 @@ class SkewHeap(Generic[T]):
             SkewNode.merge(self._root.left, self._root.right) if self._root else None
         )
 
-        return result
+        return result  # noqa: R504
 
     def top(self) -> T:
         """
